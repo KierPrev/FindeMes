@@ -1,0 +1,79 @@
+<DOCTYPE! html>
+
+<html>
+
+    <head>
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="js/calcular.js"></script>
+
+        <style>
+        body {
+            font-family: sans-serif;
+          }
+        </style>
+
+    </head>
+
+    <body>
+      
+      <p style="margin-top: 0.3rem; margin-bottom: 1.1em; font-size:0.9rem; color:rgb(208, 208, 208)">Calculadora de gastos e inflación  🇦🇷</p>
+      <img src="Titulo.png" alt="Llego a fin de mes?" style="width: 16em; height: 6.95em; margin-bottom: 2.3em;">
+
+           <!-- <p style="margin-top: 0.7em;margin-bottom: 0em; font-size:1.9em; color:rgb(255, 255, 255)">¿Llego a fin de mes?</p>  -->
+            
+            
+                      
+            Gastás por día
+            <br>
+            <input class="input" type="number" id="gastos" value="0" size="15em" oninput="cambiarTasa(), gastoMes()">
+            <br>
+            <p style="font-size:0.8em; color:rgb(178, 215, 186)">Inflación diaria estimada: 1%</p>
+            <br>
+            Tenés en <select onchange="cambiarTasa(), gastoMes()" id="cual-billetera">
+                <option value="mercadopago">MercadoPago</option>
+                <option value="naranjax">Naranja X</option>
+                <option value="prex">Prex</option>
+              </select>
+            <br>
+            <input class="input" type="number" id="billetera" value="0" size="15em" oninput="cambiarTasa(), gastoMes()">
+            <p id="tasaActual" style="font-size:1em; color:rgb(178, 215, 186)">Tasa: 96.7%</p>
+
+            <!-- <button class="button" onclick="cambiarTasa(), gastoMes()" type="button">Calcular</button>
+            
+            <br> <br> -->
+
+           
+            
+            <div style="border: solid #58c29b; margin: auto; width: 22em; border-radius: 1.5em; padding-top: 1em; padding-bottom: 0.25em;
+            background-color: #558ec1; border-width: 0.1em; font-size: 1.1em; text-align:center;
+            background-image: linear-gradient(150deg, rgba(47,80,109,1) 0%, rgb(73 143 165) 69%, rgb(178 176 172) 100%);">
+            Gastos proyectados: 
+            <p style="display:inline" id="gastoTotal">&emsp; $ 0</p>
+            
+            <br>
+            <br> 
+            Plata proyectada:
+            <p style="display:inline" id="plataTotal">&emsp;    $ 0</p>
+            <br><br>
+            <p style="font-size:0.7em ; color:rgb(212, 215, 212)">(A fin de mes)</p>
+
+            </div>
+
+            <p
+            id="llegas"
+            style="display: none; color:rgb(255, 159, 144);">No llegás a fin de mes con saldo positivo</p>
+
+            <br>
+            <br>
+            <br>
+
+            
+            <div class="fixed"><strong>
+            <a href='https://cafecito.app/kier' rel='noopener' target='_blank'><img style="border-radius:10em; width:12em; height:auto" srcset='https://cdn.cafecito.app/imgs/buttons/button_6.png 1x, https://cdn.cafecito.app/imgs/buttons/button_6_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_6_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_6.png' alt='Invitame un café en cafecito.app' /></a>
+            </strong></div>
+            
+            
+    </body>
+
+</html>
