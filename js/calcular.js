@@ -63,9 +63,9 @@ function gastoMes() {
 
     
 
-    document.getElementById("gastoTotal").innerHTML = "&emsp; $ " + String(round(gastoTotal).toLocaleString('en-US'));
+    document.getElementById("gastoTotal").innerHTML = "&emsp; - $" + String(round(gastoTotal).toLocaleString('en-US'));
 
-    document.getElementById("plataTotal").innerHTML = "&emsp; $ " + String(round(plataTotal).toLocaleString('en-US'));
+    document.getElementById("plataTotal").innerHTML = "&emsp; $" + String(round(plataTotal).toLocaleString('en-US'));
     
   
 
@@ -80,8 +80,8 @@ function gastoMes() {
 
  
 
-  document.getElementById('perdida').innerHTML = "&emsp; $ " + String(round(perdida).toLocaleString('en-US'));
+  document.getElementById('perdida').innerHTML = "&emsp; - $" + String(round(perdida).toLocaleString('en-US'));
 
-  document.getElementById('rendimiento').innerHTML = "&emsp; $ " + String(round(rendimientos).toLocaleString('en-US'));
+  document.getElementById('rendimiento').innerHTML = "&emsp; + $" + String(round(rendimientos).toLocaleString('en-US'));
   
   }
