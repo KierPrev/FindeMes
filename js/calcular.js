@@ -39,9 +39,11 @@ function gastoMes() {
       return Math.sign(v) * Math.round(Math.abs(v));
   }
 
+    perdida = 0;
 
     for (let i = 0; i < diasRestantes; i++) {
       gastoAjustado = gastoHoy*1.01**i;
+      perdida = perdida + gastoHoy*1.01**i - gastoHoy;
       gastoTotal = gastoTotal + gastoAjustado;
       if ((plataTotal - gastoAjustado)>0) {
         plataTotal = (plataTotal - gastoAjustado) + (plataTotal - gastoAjustado)*tasa/100/365;
@@ -67,5 +69,9 @@ function gastoMes() {
   else {
     document.getElementById('llegas').style.display = 'none';
   }
+
+ 
+
+  document.getElementById('perdida').innerHTML = "&emsp; $ " + String(round(perdida).toLocaleString('en-US'));
   
   }
