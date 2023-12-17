@@ -15,6 +15,10 @@ function cambiarTasa() {
     tasa=110;
     console.log("naranjax");
   }
+  else if (value=="billetera") {
+    tasa=0;
+    console.log("billetera");
+  }
 
 document.getElementById("tasaActual").innerHTML = "Tasa: " + tasa + " %"
 }
