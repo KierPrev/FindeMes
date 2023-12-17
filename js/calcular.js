@@ -80,7 +80,7 @@ function gastoMes() {
 
  
 
-  document.getElementById('perdida').innerHTML = "&emsp; - $" + String(round(perdida).toLocaleString('en-US'));
+  document.getElementById('perdida').innerHTML = "&emsp; $" + String(round(perdida).toLocaleString('en-US')) + ")";
 
   document.getElementById('rendimiento').innerHTML = "&emsp; + $" + String(round(rendimientos).toLocaleString('en-US'));
   
