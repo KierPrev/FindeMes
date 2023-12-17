@@ -20,7 +20,7 @@ function cambiarTasa() {
     console.log("efectivo");
   }
 
-document.getElementById("tasaActual").innerHTML = "Tasa: " + tasa + " %"
+document.getElementById("tasaActual").innerHTML = "TNA: " + tasa + " %"
 }
 
 function gastoMes() {
