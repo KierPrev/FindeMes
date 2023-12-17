@@ -45,13 +45,16 @@ function gastoMes() {
   }
 
     perdida = 0;
+    rendimientos = 0;
 
     for (let i = 0; i < diasRestantes; i++) {
       gastoAjustado = gastoHoy*(1+inflacion/100)**i;
       perdida = perdida + gastoHoy*(1+inflacion/100)**i - gastoHoy;
       gastoTotal = gastoTotal + gastoAjustado;
       if ((plataTotal - gastoAjustado)>0) {
-        plataTotal = (plataTotal - gastoAjustado) + (plataTotal - gastoAjustado)*tasa/100/365;
+        rendimientos = rendimientos + (plataTotal - gastoAjustado)*tasa/100/365;
+        plataTotal = (plataTotal - gastoAjustado) + (plataTotal - gastoAjustado)*tasa/100/365;        
+        console.log(rendimientos);
       }
       else {
         plataTotal = plataTotal - gastoAjustado;
@@ -78,5 +81,7 @@ function gastoMes() {
  
 
   document.getElementById('perdida').innerHTML = "&emsp; $ " + String(round(perdida).toLocaleString('en-US'));
+
+  document.getElementById('rendimiento').innerHTML = "&emsp; $ " + String(round(rendimientos).toLocaleString('en-US'));
   
   }
