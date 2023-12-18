@@ -63,7 +63,7 @@ function gastoMes() {
 
     
 
-    document.getElementById("gastoTotal").innerHTML = "- $" + String(round(gastoTotal).toLocaleString('en-US'));
+    document.getElementById("gastoTotal").innerHTML = "-$" + String(round(gastoTotal).toLocaleString('en-US'));
 
     document.getElementById("plataTotal").innerHTML = "$" + String(round(plataTotal).toLocaleString('en-US'));
     
@@ -82,6 +82,6 @@ function gastoMes() {
 
   document.getElementById('perdida').innerHTML = "$" + String(round(perdida).toLocaleString('en-US'));
 
-  document.getElementById('rendimiento').innerHTML = "+ $" + String(round(rendimientos).toLocaleString('en-US'));
+  document.getElementById('rendimiento').innerHTML = "+$" + String(round(rendimientos).toLocaleString('en-US'));
   
   }
