@@ -4,7 +4,7 @@ function cambiarTasa() {
   inflacion = document.getElementById("tasainflacion").value;
 
   if (value=="mercadopago") {
-    tasa=96.7;
+    tasa=86.5;
     console.log("MP");
   }
   else if (value=="prex") {
