@@ -8,7 +8,7 @@ function cambiarTasa() {
     console.log("MP");
   }
   else if (value=="prex") {
-    tasa=123.01;
+    tasa=107.49;
     console.log("Prex");
   }
   else if (value=="naranjax") {
