@@ -19,6 +19,10 @@ function cambiarTasa() {
     tasa=0;
     console.log("efectivo");
   }
+  else if (value=="personalpay") {
+    tasa=125;
+    console.log("personalpay");
+  }
 
 document.getElementById("tasaActual").innerHTML = "TNA: " + tasa + " %"
 }
