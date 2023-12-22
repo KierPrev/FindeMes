@@ -20,7 +20,7 @@ function cambiarTasa() {
     console.log("efectivo");
   }
   else if (value=="personalpay") {
-    tasa=125;
+    tasa=104.9;
     console.log("personalpay");
   }
 
