@@ -4,11 +4,11 @@ function cambiarTasa() {
   inflacion = document.getElementById("tasainflacion").value;
 
   if (value=="mercadopago") {
-    tasa=82.8;
+    tasa=82;
     console.log("MP");
   }
   else if (value=="prex") {
-    tasa=88.48;
+    tasa=88.44;
     console.log("Prex");
   }
   else if (value=="naranjax") {
@@ -20,7 +20,7 @@ function cambiarTasa() {
     console.log("efectivo");
   }
   else if (value=="personalpay") {
-    tasa=92.1;
+    tasa=90.7;
     console.log("personalpay");
   }
 
